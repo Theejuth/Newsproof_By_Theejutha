@@ -1,0 +1,4 @@
+.DS_Store
+out/
+src/manifest.json
+crowdin.yaml
