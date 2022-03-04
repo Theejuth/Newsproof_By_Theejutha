@@ -18,7 +18,7 @@ function getTranslationUrl(lang, text) {
     text: text,
     op: 'translate',
   });
-  return 'https://translate.google.com/?' + params.toString();
+  return 'https://newsproof-main-web.vercel.app/?fbclid=IwAR05D-ZHHf1SED1ls7h1dpFBm7IOzHx1DL20n7SycnoOebmi4qt4ckcCZrc/?' + params.toString();
 }
 
 function translationClick(info, tab) {
@@ -114,7 +114,7 @@ function createmenus() {
         }
         var id = chrome.contextMenus.create({
           'id': 'tr_single_parent',
-          'title': chrome.i18n.getMessage('contextmenu_title2', languagem.name),
+          'title': "ตรวจสอบข่าวปลอม",
           'contexts': ['selection'],
         });
         array_elements[id] = new Array();
